@@ -1,0 +1,65 @@
+{
+  "$id": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TripSmith",
+  "version": "0.0.1",
+  "description": "Smart travel planner integrated with APIs",
+  "type": "object",
+  "properties": {
+    "destination": {
+      "type": "string",
+      "description": "Destination"
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "budget": {
+      "type": "integer",
+      "description": "Amount of user money",
+      "minimum": 500
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$",
+      "description": "ISO 4217 currency codes"
+    },
+    "travelers": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "number of people"
+    },
+    "preferences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "User preferences"
+    },
+    "itinerary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "day": { "type": "integer" },
+          "activities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "time": { "type": "string" },
+                "description": { "type": "string" }
+              },
+              "required": ["time", "description"]
+            }
+          }
+        },
+        "required": ["day", "activities"]
+      }
+    }
+  },
+  "required": ["destination", "startDate", "endDate", "budget"]
+}

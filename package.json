@@ -1,0 +1,12 @@
+{
+  "name": "tripsmith",
+  "version": "0.0.1",
+  "description": "**TripSmith** é um planejador inteligente de viagens que integra múltiplas APIs (Google Maps, Google Places, Skyscanner, Booking, OpenAI) para gerar roteiros personalizados de curta, média ou longa duração.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
