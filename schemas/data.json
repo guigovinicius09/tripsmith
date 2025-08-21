@@ -1,0 +1,9 @@
+{
+  "destination": "London",
+  "startDate": "2025-09-07",
+  "endDate": "2025-10-15",
+  "budget": 600,
+  "curremcy": "EUR",
+  "travelers": 1,
+  "preferences": ["pubs, beers, museums"]
+}

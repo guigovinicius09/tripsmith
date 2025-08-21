@@ -1,7 +1,6 @@
 {
   "$id": "https://json-schema.org/draft/2020-12/schema",
   "title": "TripSmith",
-  "version": "0.0.1",
   "description": "Smart travel planner integrated with APIs",
   "type": "object",
   "properties": {
