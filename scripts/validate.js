@@ -2,7 +2,7 @@
 const Ajv = require("ajv");
 const addFormats = require("ajv-formats");
 const schema = require("../schemas/schema.json");
-const data = require("../schemas/data.json");
+const data = require("../apps/frontend/planejamento.json");
 
 // Inicializa o AJV
 const ajv = new Ajv({ allErrors: true, strict: false });

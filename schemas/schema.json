@@ -18,8 +18,8 @@
     },
     "budget": {
       "type": "integer",
-      "description": "Amount of user money",
-      "minimum": 500
+      "minimum": 50000,
+      "description": "Amount of user money in cents"
     },
     "currency": {
       "type": "string",
